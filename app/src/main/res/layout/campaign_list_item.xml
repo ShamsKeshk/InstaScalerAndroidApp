@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:elevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_campaign_name"
+            style="@style/campaign_card_texts_styles"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="name" />
+
+        <TextView
+            android:id="@+id/tv_campaign_category"
+            style="@style/campaign_card_texts_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_campaign_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_campaign_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_campaign_name"
+            tools:text="category"
+            android:layout_marginTop="16dp" />
+
+
+        <TextView
+            android:id="@+id/tv_campaign_country"
+            style="@style/campaign_card_texts_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_campaign_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.738"
+            app:layout_constraintStart_toEndOf="@+id/tv_campaign_category"
+            app:layout_constraintTop_toTopOf="@+id/tv_campaign_category"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="country" />
+
+        <TextView
+            android:id="@+id/tv_campaign_budget"
+            style="@style/campaign_card_texts_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_campaign_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.743"
+            app:layout_constraintStart_toEndOf="@+id/tv_campaign_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_campaign_name"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="budget" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_campaign_goal"
+            style="@style/campaign_card_texts_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_campaign_category"
+            tools:text="goal" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
